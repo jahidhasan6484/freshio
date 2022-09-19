@@ -1,0 +1,28 @@
+.blog_card{
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0;
+    padding: 30px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.blog_image {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.blog_card:hover {
+    transform: scale(1.1);
+}
+
+.blog_date {
+    letter-spacing: 2px;
+    color: green;
+    font-size: 0.8rem;
+}
+
+.blog_title{
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}

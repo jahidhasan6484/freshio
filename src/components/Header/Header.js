@@ -5,6 +5,7 @@ import logo from '../../images/logo.svg';
 import Home from "../Home/Home";
 import Category from "../Category/Category";
 import Hot from "../Hot/Hot";
+import Blog from "../Blog/Blog";
 
 const Header = () => {
 
@@ -51,7 +52,7 @@ const Header = () => {
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
+                                        <a class="nav-link" href="#blog">Blog</a>
                                     </li>
                                 </ul>
                                 <div class="cart_user_section">
@@ -80,7 +81,10 @@ const Header = () => {
             <Home />
 
             <Category />
+        
             <Hot />
+            
+            <Blog />
         </>
     )
 }

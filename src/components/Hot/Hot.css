@@ -27,13 +27,13 @@
     justify-content: space-between;
 }
 
-.hot_card_title{
+.hot_card_title {
     letter-spacing: 2px;
     font-size: 0.9rem;
     cursor: pointer;
 }
 
-.hot_card_details div .price{
+.hot_card_details div .price {
     font-size: 0.8rem;
     letter-spacing: 2px;
     color: green;

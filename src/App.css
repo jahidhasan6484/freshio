@@ -10,13 +10,13 @@
 }
 
 .section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .section_title {
   font-family: 'Jost', sans-serif;
-  letter-spacing: 2px; 
+  letter-spacing: 3px; 
   text-align: center;
   color: green;
   display: flex;
