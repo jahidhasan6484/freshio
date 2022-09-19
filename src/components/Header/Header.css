@@ -1,3 +1,39 @@
 .logo {
-    width: 100px;
+    width: 80px;
+}
+
+.navbar {
+    padding: 30px 0;
+}
+
+.active {
+    background: #fff;
+}
+
+.cart_user_section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cart_user_section div svg{
+    cursor: pointer;
+}
+
+.cart_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart_section p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.sign_in_section {
+    background: #e7e7e7;
+    padding: 15px;
+    border-radius: 50%;
 }

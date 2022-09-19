@@ -1,0 +1,47 @@
+.hot_image {
+    width: 100%;
+}
+
+.hot_card {
+    border: 1px dashed rgb(226, 226, 226);
+    padding: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hot_card:hover {
+    border: 1px dashed green;
+}
+
+.rating {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: orangered;
+}
+
+.hot_card_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hot_card_title{
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.hot_card_details div .price{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: green;
+}
+
+.add_remove_btn {
+    background: #e7e7e7;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
