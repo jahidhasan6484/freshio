@@ -3,20 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
 
 
-* {
-  /* font-family: 'Jost', sans-serif; */
-  font-family: 'Poppins', sans-serif;
-
-}
+/* *::-webkit-scrollbar {
+  display: none;
+} */
 
 .section {
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
 .section_title {
-  font-family: 'Jost', sans-serif;
-  letter-spacing: 3px; 
+ font-family: 'Engagement', cursive;
+  letter-spacing: 3px;
   text-align: center;
   color: green;
   display: flex;
@@ -25,14 +23,14 @@
 
 .sub_title {
   text-align: center;
-  letter-spacing: 3px; 
+  letter-spacing: 3px;
   font-size: 0.9rem;
   color: #8f8f8f;
-} 
+}
 
 .content {
   margin-top: 3rem;
-} 
+}
 
 .hamburger {
   font-size: 0.6rem;
@@ -44,7 +42,7 @@
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
 }

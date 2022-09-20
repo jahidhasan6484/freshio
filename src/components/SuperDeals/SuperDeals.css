@@ -1,0 +1,58 @@
+.super_deals_card {
+    padding: 30px;
+}
+
+.super_deals_card .row {
+    border: 2px solid green;
+    padding: 25px;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+}
+
+.deals_image {
+    width: 100%;
+}
+
+.deals_info {
+    text-align: right;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sold {
+    color: orangered;
+}
+
+.available {
+    color: green;
+}
+
+.sold,
+.available {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.deals_rating {
+    font-size: 0.8rem;
+    color: orangered;
+    letter-spacing: 2px;
+}
+
+.hurry{
+    font-size: 0.9rem;
+    color: #747474;
+    letter-spacing: 1px;
+}
+
+.deals_name,
+.deals_price {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}

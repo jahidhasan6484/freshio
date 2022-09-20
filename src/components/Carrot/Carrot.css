@@ -1,0 +1,39 @@
+.carrot2 {
+    background-image: url("https://htmldemo.net/mixy/mixy/assets/images/banners/img2_banner2_mixy4.webp");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrot_content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.carrot{
+   margin: 0;
+   padding: 0;
+}
+
+.carrot_title{
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.carrot_content h5 {
+    letter-spacing: 2px;
+    color: rgb(78, 78, 78);
+}
+
+.carrot:hover {
+    opacity: 0.8;
+}

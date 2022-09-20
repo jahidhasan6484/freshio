@@ -37,3 +37,8 @@
     padding: 15px;
     border-radius: 50%;
 }
+
+.nav-link,
+.dropdown-item {
+    font-size: 0.9rem;
+}

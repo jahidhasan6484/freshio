@@ -10,6 +10,7 @@ const Blog = () => {
     useEffect(() => {
         setBlogs(allBlogData);
     }, [])
+    
     return (
         <div className="section container" id="blog">
             <h3 className="section_title"><Fade top>From Our Blog</Fade> <Fade bottom>📜</Fade></h3>

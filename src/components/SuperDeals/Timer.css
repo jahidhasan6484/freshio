@@ -1,0 +1,17 @@
+.timer {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+}
+
+.timer div p {
+    text-align: center;
+}
+
+.timer_data {
+    background: #e7e7e7;
+    padding: 10px;
+    width: 40px;
+    border-radius: 5px;
+}
