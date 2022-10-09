@@ -18,11 +18,80 @@
 
 .blog_date {
     letter-spacing: 2px;
-    color: green;
+    color: #000;
     font-size: 0.8rem;
 }
 
 .blog_title{
     letter-spacing: 2px;
     font-size: 0.9rem;
+    color: green;
+}
+
+.blog_card a {
+    text-decoration: none;
+}
+
+.blog_section {
+    padding: 20px;
+}
+
+.blog_image {
+    width: 100%;
+}
+
+.full_blog {
+    background: rgb(231, 231, 231);
+}
+
+.full_blog h3,
+.full_blog h5{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.blog_content{
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: rgb(80, 80, 80);
+}
+
+.latest_blog {
+    padding-top: 7rem;
+}
+
+.latest_blog h6{
+    color: green;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.latest_single_blog a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.latest_single_blog img{
+    width: 40%;
+    border-radius: 5px;
+}
+
+.latest_single_blog div {
+    padding: 5px 0;
+}
+
+.latest_title{
+    font-size: 0.9rem;
+    color: green;
+}
+
+.latest_date {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #000;
 }

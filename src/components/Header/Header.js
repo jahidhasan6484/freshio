@@ -9,6 +9,7 @@ import Blog from "../Blog/Blog";
 import SuperDeals from "../SuperDeals/SuperDeals";
 
 import Fade from 'react-reveal/Fade';
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -28,7 +29,10 @@ const Header = () => {
             <Fade top>
                 <nav class={showColor ? "navbar active navbar-expand-lg fixed-top" : "navbar navbar-expand-lg fixed-top"}>
                     <div class="container">
+                        <Link to='/'>
                         <img className="logo" src={logo} alt="Freshio"></img>
+                        </Link>
+                        
                         {
                             showColor &&
                             <>
@@ -83,14 +87,7 @@ const Header = () => {
                 </nav>
             </Fade>
 
-            <Home />
 
-            <Category />
-            <SuperDeals />
-
-            <Hot />
-
-            <Blog />
         </>
     )
 }

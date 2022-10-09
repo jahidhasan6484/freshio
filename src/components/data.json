@@ -1,0 +1,120 @@
+[
+    {
+        "key": "coconut",
+        "name": "Organic Coconut",
+        "price": "60",
+        "priceUnit": "1 pice",
+        "sold": "365",
+        "available": "634",
+        "rating": "4.9 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-7-1.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-7-2.jpg",
+        "category": "superDeals",
+        "type": "Fresh Fruits"
+    },
+    {
+        "key": "almond",
+        "name": "Almond Organic",
+        "price": "90",
+        "priceUnit": "1 Pice",
+        "sold": "165",
+        "available": "234",
+        "rating": "4.8 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-8-1.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-8-2.jpg",
+        "category": "superDeals",
+        "type": "Canned Goods"
+    },
+    {
+        "key": "sweet",
+        "name": "Fresh Fruit Sweet",
+        "price": "300",
+        "priceUnit": "1 KG",
+        "sold": "120",
+        "available": "90",
+        "rating": "4.5 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-3-1.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-3-2.jpg",
+        "category": "superDeals",
+        "type": "Fresh Fruits"
+    },
+    {
+        "key": "orange",
+        "name": "Fresh Orange",
+        "price": "295.00",
+        "priceUnit": "1 KG",
+        "sold": "120",
+        "available": "90",
+        "rating": "4.7 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-12-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-12-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Fruits"
+      },
+      {
+        "key": "mango",
+        "name": "Fresh Mango",
+        "price": "905.00",
+        "priceUnit": "1 KG",
+        "rating": "4.9 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-13-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-13-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Fruits"
+      },
+      {
+        "key": "apricots",
+        "name": "Dried Apricots",
+        "price": "1000.00",
+        "priceUnit": "1 KG",
+        "rating": "4.8 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-10-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-10-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Fruits"
+      },
+      {
+        "key": "dal",
+        "name": "Toor Dal",
+        "price": "130.00",
+        "priceUnit": "1 KG",
+        "rating": "4.8 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-14-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-14-1.jpg",
+        "category": "hotData",
+        "type": "Daily Needs"
+      },
+      {
+        "key": "brockley",
+        "name": "Green Brockley",
+        "price": "295.00",
+        "priceUnit": "1 KG",
+        "rating": "4.7 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-6-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-6-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Vegitables"
+      },
+      {
+        "key": "whiteworths",
+        "name": "White Worths",
+        "price": "700.00",
+        "priceUnit": "1 KG",
+        "rating": "4.5 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-5-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-5-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Fruits"
+      },
+      {
+        "key": "driedmango",
+        "name": "Dried Mango",
+        "price": "1200.00",
+        "priceUnit": "1 KG",
+        "rating": "4.9 out of 5",
+        "image1": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-4-2.jpg",
+        "image2": "https://htmldemo.net/mixy/mixy/assets/images/products/product-image-4-1.jpg",
+        "category": "hotData",
+        "type": "Fresh Fruits"
+      }
+]

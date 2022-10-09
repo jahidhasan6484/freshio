@@ -3,17 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
 
 
-/* *::-webkit-scrollbar {
-  display: none;
-} */
-
 .section {
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
+.section2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .section_title {
- font-family: 'Engagement', cursive;
+  font-family: 'Engagement', cursive;
   letter-spacing: 3px;
   text-align: center;
   color: green;

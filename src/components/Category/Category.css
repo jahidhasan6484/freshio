@@ -5,24 +5,31 @@
 .category_card {
     border: 1px dashed #fff;
     border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 1px;
+}
+
+.category_card a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    margin-bottom: 1px;
-    cursor: pointer;
-    overflow: hidden;
 }
 
-.category_card div h5{
+.category_card a div h5{
    font-size: 0.9rem;
    letter-spacing: 2px;
+   color: #000;
 }
 
-.category_card div p{
+.category_card a div p{
    font-size: 0.7rem;
    letter-spacing: 1px;
    color: green;
+}
+
+.category_card a {
+    text-decoration: none;
 }
 
 .category_card .category_image {

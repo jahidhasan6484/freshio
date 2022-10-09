@@ -1,71 +1,37 @@
-import React, { useEffect, useState } from "react";
-import './Hot.css';
-
-import data from '../data.json';
-
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import React from "react";
+import './handleCategory.css';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import { useParams } from "react-router-dom";
 
-const Hot = () => {
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        autoplay: true,
-        arrows: false,
-        dots: false,
+import data from '../data.json';
+import { useEffect } from "react";
+import { useState } from "react";
 
-        responsive: [{
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 411,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
-    };
+const HandleCategory = () => {
+    const { category } = useParams();
 
-    // const [addRemove, setAddRemove] = useState(true);
-    // var products = []
-
-    // const handleAddRemove = (productName) => {
-    //     setAddRemove(!addRemove);
-    // }
-
+    const [typeData, setTypeData] = useState([]);
     const [isShown, setIsShown] = useState(false);
 
-    const [hotData, setHotData] = useState([]);
-
     useEffect(() => {
-        let data_filter = data.filter(element => element.category == "hotData")
-        setHotData(data_filter);
+
+        let data_filter = data.filter(element => element.type == category)
+
+        
+        setTypeData(data_filter)
+        
     }, [])
 
-
     return (
-        <div className="section container" id="hot">
-            <h3 className="section_title"><Fade top>What’s Hot!</Fade> <Fade bottom>🌶️</Fade></h3>
-            <Fade bottom>
-                <p className="sub_title">Find out best seller products!</p>
-            </Fade>
-
-            <Fade>
+            <div className="section2 container">
+                <h3 className="section_title"><Fade top>{category}</Fade></h3>
                 <div className="row content">
-                    <Slider {...settings}>
-                        {
-                            hotData.map(data => {
+
+                    {
+                        typeData.length > 0 ?
+                            typeData.map((data) => {
+
                                 return (
                                     <div className="col-md-3 hot_card" onMouseEnter={() => setIsShown(data.key)}
                                         onMouseLeave={() => setIsShown("")}>
@@ -97,12 +63,16 @@ const Hot = () => {
                                     </div>
                                 )
                             })
-                        }
-                    </Slider>
+
+                            :
+                            <p className="sub_title">No item available now, it will update soon!</p>
+                    }
+
                 </div>
-            </Fade>
-        </div>
+
+            </div>
+
     )
 }
 
-export default Hot;
+export default HandleCategory;

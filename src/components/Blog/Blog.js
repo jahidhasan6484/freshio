@@ -3,6 +3,7 @@ import './Blog.css';
 
 import allBlogData from './blogData.json';
 import Fade from 'react-reveal/Fade';
+import { Link } from "react-router-dom";
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
@@ -22,11 +23,16 @@ const Blog = () => {
                 {
                     blogs.map(blog => {
                         return (
-                            <div className="col-md-4 blog_card">
+                                <div className="col-md-4 blog_card">
+                                    
+                            <Link to={`/blogs/${blog.key}`}>
                                 <img className="blog_image" src={blog.image}></img>
                                 <p className="blog_date">{blog.date}</p>
                                 <h6 className="blog_title">{blog.name}</h6>
+                                
+                            </Link>
                             </div>
+                            
                         )
                     })
                 }
