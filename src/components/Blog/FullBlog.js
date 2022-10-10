@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Logo from "../Logo/Logo";
 import data from './blogData.json';
 
 const FullBlog = () => {
@@ -11,7 +12,7 @@ const FullBlog = () => {
     const [latestBlog, setLatestBlog] = useState([])
 
     useEffect(() => {
-        let data_filter = data.filter(element => element.key == key)
+        let data_filter = data.filter(element => element.key === key)
         setBlog(data_filter);
         let data_filter2 = data.filter(element => element.key !== key)
         setLatestBlog(data_filter2);
@@ -19,6 +20,7 @@ const FullBlog = () => {
     return (
         <div className="full_blog">
             <div className="section2 container">
+                <Logo />
                 <div className="row content">
                     <div className="col-md-9 blog_section">
                         {
@@ -42,18 +44,18 @@ const FullBlog = () => {
                             })
                         }
                     </div>
-                    <div className="col-md-3 latest_blog">
+                    <div className="col-md-3 sidebar">
                         <h6>Latest Posts</h6>
 
                         {
                             latestBlog && latestBlog.map((blog) => {
                                 return (
-                                    <div className="latest_single_blog">
+                                    <div className="sidebar_element">
                                         <Link to={`/blogs/${blog.key}`}>
-                                            <img className="img-fluid" src={blog.image} alt="image"></img>
+                                            <img className="img-fluid" src={blog.image} alt={data.name}></img>
                                             <div>
-                                                <p className="latest_title">{blog.name}</p>
-                                                <p className="latest_date">{blog.date}</p>
+                                                <p className="sidebar_title">{blog.name}</p>
+                                                <p className="sidebar_date">{blog.date}</p>
                                             </div>
                                         </Link>
                                     </div>

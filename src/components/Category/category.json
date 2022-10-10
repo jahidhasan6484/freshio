@@ -1,0 +1,44 @@
+[
+    {
+        "key": "Fresh Vegitables",
+        "name": "Fresh Vegitables",
+        "available": "8 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/fresh_vegetables.webp"
+    },
+    {
+        "key": "Canned Goods",
+        "name": "Canned Goods",
+        "available": "10 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/canned_goods.webp"
+    },
+    {
+        "key": "Meats & Seafoods",
+        "name": "Meats & Seafoods",
+        "available": "10 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/meats_seafood.webp"
+    },
+    {
+        "key": "Fresh Fruits",
+        "name": "Fresh Fruits",
+        "available": "10 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/fresh_fruits.webp"
+    },
+    {
+        "key": "Bread & Bakery",
+        "name": "Bread & Bakery",
+        "available": "9 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/bread_bakery.webp"
+    },
+    {
+        "key": "Eggs & Dairy",
+        "name": "Eggs & Dairy",
+        "available": "12 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/eggs_dairy.webp"
+    },
+    {
+        "key": "Soft Drinks",
+        "name": "Soft Drinks",
+        "available": "9 Products",
+        "image": "https://htmldemo.net/mixy/mixy/assets/images/categories/soft_drinks.webp"
+    }
+]

@@ -1,12 +1,12 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import './handleCategory.css';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import data from '../data.json';
-import { useEffect } from "react";
-import { useState } from "react";
+import categoryData from '../Category/category.json';
+import Logo from "../Logo/Logo";
 
 const HandleCategory = () => {
     const { category } = useParams();
@@ -14,21 +14,27 @@ const HandleCategory = () => {
     const [typeData, setTypeData] = useState([]);
     const [isShown, setIsShown] = useState(false);
 
+    const [otherCategory, setOtherCategory] = useState([]);
+
     useEffect(() => {
-
-        let data_filter = data.filter(element => element.type == category)
-
-        
+        let data_filter = data.filter(element => element.type === category)
         setTypeData(data_filter)
+
+        let data_filter2 = categoryData.filter(categ => categ.name !== category)
+        setOtherCategory(data_filter2) 
         
-    }, [])
+    })
 
     return (
             <div className="section2 container">
-                <h3 className="section_title"><Fade top>{category}</Fade></h3>
+                <Logo />
+                
                 <div className="row content">
 
-                    {
+                    <div className="col-md-10">
+                    <h3 className="section_title"><Fade top>{category}</Fade></h3>
+                        <div className="row">
+                        {
                         typeData.length > 0 ?
                             typeData.map((data) => {
 
@@ -68,6 +74,27 @@ const HandleCategory = () => {
                             <p className="sub_title">No item available now, it will update soon!</p>
                     }
 
+                        </div>
+                    </div>
+                    <div className="col-md-2 sidebar">
+                        <h6>More Products</h6>
+
+                         {
+                            otherCategory && otherCategory.map((data) => {
+                                return (
+                                    <div className="sidebar_element">
+                                        <Link to={`/handleCategory/${data.key}`}>
+                                            <img className="img-fluid" src={data.image} alt="image"></img>
+                                            <div>
+                                                <p className="sidebar_title">{data.name}</p>
+                                                <p className="sidebar_date">{data.available}</p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                )
+                            })
+                        } 
+                    </div>
                 </div>
 
             </div>

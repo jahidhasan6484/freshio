@@ -58,17 +58,17 @@
     color: rgb(80, 80, 80);
 }
 
-.latest_blog {
+.sidebar {
     padding-top: 7rem;
 }
 
-.latest_blog h6{
+.sidebar h6{
     color: green;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.latest_single_blog a{
+.sidebar_element a{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -76,21 +76,21 @@
     text-decoration: none;
 }
 
-.latest_single_blog img{
+.sidebar_element a img{
     width: 40%;
     border-radius: 5px;
 }
 
-.latest_single_blog div {
+.sidebar_element div {
     padding: 5px 0;
 }
 
-.latest_title{
+.sidebar_title{
     font-size: 0.9rem;
     color: green;
 }
 
-.latest_date {
+.sidebar_date {
     font-size: 0.7rem;
     letter-spacing: 1px;
     color: #000;
