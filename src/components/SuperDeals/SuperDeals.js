@@ -96,7 +96,7 @@ const SuperDeals = () => {
                             {
                                 superDealsData.map(deals => {
                                     return (
-                                        <div className="super_deals_card">
+                                        <div key={deals.key} className="super_deals_card">
                                             <div className="row">
                                                 <div className="col-md-6 deals_status">
                                                     <img className="deals_image" src={deals.image1} alt={deals.key}></img>

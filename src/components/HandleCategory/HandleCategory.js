@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import data from '../data.json';
 import categoryData from '../Category/category.json';
 import Logo from "../Logo/Logo";
+import CartUser from "../Header/CartUser/CartUser";
 
 const HandleCategory = () => {
     const { category } = useParams();
@@ -25,9 +26,21 @@ const HandleCategory = () => {
         
     })
 
+    let cartItem = JSON.parse(localStorage.getItem('cart'))
+    const [cart, setCart] = useState(cartItem)
+
+    const handleAddToCart = (data)=> {
+        cart.push(data)
+        localStorage.setItem('cart', JSON.stringify(cart))
+        // updateCart()
+    }
+
     return (
             <div className="section2 container">
-                <Logo />
+                 <div className="second_header">
+                 <Logo /> 
+                <CartUser />
+                 </div>
                 
                 <div className="row content">
 
@@ -39,7 +52,7 @@ const HandleCategory = () => {
                             typeData.map((data) => {
 
                                 return (
-                                    <div className="col-md-3 hot_card" onMouseEnter={() => setIsShown(data.key)}
+                                    <div key={data.key} className="col-md-3 hot_card" onMouseEnter={() => setIsShown(data.key)}
                                         onMouseLeave={() => setIsShown("")}>
 
                                         {
@@ -59,8 +72,8 @@ const HandleCategory = () => {
                                                 <p className="price">৳ {data.price} ({data.priceUnit})</p>
                                             </div>
 
-                                            <div className="add_remove_btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                                            <div className="add_remove_btn" onClick={()=> handleAddToCart()}>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-bag-dash" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" />
                                                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                                                 </svg>

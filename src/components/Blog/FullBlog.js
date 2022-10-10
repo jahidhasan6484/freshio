@@ -50,7 +50,7 @@ const FullBlog = () => {
                         {
                             latestBlog && latestBlog.map((blog) => {
                                 return (
-                                    <div className="sidebar_element">
+                                    <div key={blog.key} className="sidebar_element">
                                         <Link to={`/blogs/${blog.key}`}>
                                             <img className="img-fluid" src={blog.image} alt={data.name}></img>
                                             <div>
